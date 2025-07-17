@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.poopooskin.mccourse.MCCourse;
+import net.poopooskin.mccourse.item.custom.ChainsawItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -16,6 +17,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_AZURITE = ITEMS.register("raw_azurite",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHAINSAW = ITEMS.register("chainsaw",
+            () -> new ChainsawItem(new Item.Properties().durability(32)));
 
 
 

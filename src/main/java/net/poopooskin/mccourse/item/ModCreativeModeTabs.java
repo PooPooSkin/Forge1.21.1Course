@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.AZURITE.get());
                         output.accept(ModItems.RAW_AZURITE.get());
+                        output.accept(ModItems.CHAINSAW.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AZURITE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("azurite_blocks_tab",
@@ -29,6 +30,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_BLOCK.get());
                         output.accept(ModBlocks.AZURITE_ORE.get());
                         output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.AZURITE_END_ORE.get());
+                        output.accept(ModBlocks.AZURITE_NETHER_ORE.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {
